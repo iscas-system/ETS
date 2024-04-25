@@ -1,0 +1,13 @@
+__pycache__
+*.sql
+*.sqlite
+*.qdrep
+*.dict
+*.csv
+*.log
+*.pyc
+
+build/
+dist/
+nvidia_pyprof.egg-info/
+.idea/

@@ -1,0 +1,175 @@
+{
+    "train_config": {
+        "model": "LSTM",
+        "dataset_environment_str": "RTX2080Ti_CPUALL",
+        "meta_dataset_environment_strs": [
+            "RTX2080Ti_CPUALL"
+        ],
+        "dataset_subgraph_node_size": 14,
+        "dataset_subgraph_step": 14,
+        "all_seed": 42,
+        "dataset_params": {
+            "duration_summed": false
+        },
+        "model_params": {
+            "num_layers": 4,
+            "bidirectional": true
+        },
+        "dataset_dummy": true,
+        "batch_size": 128,
+        "eval_steps": 5000,
+        "learning_rate": 0.001,
+        "epochs": 100,
+        "optimizer": "Adam",
+        "meta_configs": {
+            "learning_rate": 0.005,
+            "meta_learning_rate": 0.001,
+            "meta_train_steps": 1000,
+            "meta_task_per_step": 8,
+            "meta_fast_adaption_step": 5,
+            "meta_dataset_train_environment_strs": [
+                "RTX2080Ti_CPUALL"
+            ],
+            "meta_dataset_eval_environment_strs": [
+                "RTX2080Ti_CPUALL"
+            ]
+        }
+    },
+    "train_records": {
+        "loss": [],
+        "eval_metrics": [
+            {
+                "metrics": {
+                    "eval_loss": 0.07097056173447487,
+                    "MRE": 0.4472491439781887,
+                    "MAE": 0.5881637853967393,
+                    "RMSE": 533.3043329250635,
+                    "train_loss": 0.08800987154245377
+                },
+                "step": 0,
+                "duration": 0.007754661
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.012724112735780994,
+                    "MRE": 0.09268874664522114,
+                    "MAE": 0.09010399606038588,
+                    "RMSE": 171.35173563466492,
+                    "train_loss": 0.013271634466946125
+                },
+                "step": 5000,
+                "duration": 17.456773084
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.010348303371265662,
+                    "MRE": 0.06301744119264201,
+                    "MAE": 0.061216900679464746,
+                    "RMSE": 109.6273693277649,
+                    "train_loss": 0.008605239912867546
+                },
+                "step": 10000,
+                "duration": 34.993276293
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.008821799390974034,
+                    "MRE": 0.06763437216780513,
+                    "MAE": 0.061980979829490156,
+                    "RMSE": 93.71718651296838,
+                    "train_loss": 0.008443287573754787
+                },
+                "step": 15000,
+                "duration": 52.276410112
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.008598908132964135,
+                    "MRE": 0.06210735121331242,
+                    "MAE": 0.055144187028797684,
+                    "RMSE": 84.19963278073443,
+                    "train_loss": 0.006077525671571493
+                },
+                "step": 20000,
+                "duration": 69.712624422
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.007640870238563656,
+                    "MRE": 0.06608878967169736,
+                    "MAE": 0.05564543565984862,
+                    "RMSE": 76.7477697389405,
+                    "train_loss": 0.005429740529507399
+                },
+                "step": 25000,
+                "duration": 87.103206449
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006873767254297185,
+                    "MRE": 0.0666869621670443,
+                    "MAE": 0.049793488208670356,
+                    "RMSE": 65.67522086850104,
+                    "train_loss": 0.005993564147502184
+                },
+                "step": 30000,
+                "duration": 106.365613672
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.0063626676029319654,
+                    "MRE": 0.0563933018573568,
+                    "MAE": 0.043431985995959044,
+                    "RMSE": 59.491989029893936,
+                    "train_loss": 0.004819236695766449
+                },
+                "step": 35000,
+                "duration": 123.798645749
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006345459615473792,
+                    "MRE": 0.0537934822898371,
+                    "MAE": 0.04440407327588625,
+                    "RMSE": 61.708255229479164,
+                    "train_loss": 0.004443665500730276
+                },
+                "step": 40000,
+                "duration": 141.234784332
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006133180981155782,
+                    "MRE": 0.051331468701791755,
+                    "MAE": 0.039496305045884396,
+                    "RMSE": 55.648945420872934,
+                    "train_loss": 0.004365734755992889
+                },
+                "step": 45000,
+                "duration": 158.600460294
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.005466663523832649,
+                    "MRE": 0.054694757942316756,
+                    "MAE": 0.0413141574788751,
+                    "RMSE": 46.897431744736295,
+                    "train_loss": 0.004723389632999897
+                },
+                "step": 50000,
+                "duration": 175.71591514
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.005696423825667759,
+                    "MRE": 0.05296172292996084,
+                    "MAE": 0.04316716714083695,
+                    "RMSE": 59.68575727085229,
+                    "train_loss": 0.004238353576511145
+                },
+                "step": 55000,
+                "duration": 193.248042079
+            }
+        ]
+    }
+}

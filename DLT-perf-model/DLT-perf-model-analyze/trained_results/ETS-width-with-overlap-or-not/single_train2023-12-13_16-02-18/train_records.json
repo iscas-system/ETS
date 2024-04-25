@@ -1,0 +1,197 @@
+{
+    "train_config": {
+        "model": "LSTM",
+        "dataset_environment_str": "RTX2080Ti_CPUALL",
+        "meta_dataset_environment_strs": [
+            "RTX2080Ti_CPUALL"
+        ],
+        "dataset_subgraph_node_size": 12,
+        "dataset_subgraph_step": 12,
+        "all_seed": 42,
+        "dataset_params": {
+            "duration_summed": false
+        },
+        "model_params": {
+            "num_layers": 4,
+            "bidirectional": true
+        },
+        "dataset_dummy": true,
+        "batch_size": 128,
+        "eval_steps": 5000,
+        "learning_rate": 0.001,
+        "epochs": 100,
+        "optimizer": "Adam",
+        "meta_configs": {
+            "learning_rate": 0.005,
+            "meta_learning_rate": 0.001,
+            "meta_train_steps": 1000,
+            "meta_task_per_step": 8,
+            "meta_fast_adaption_step": 5,
+            "meta_dataset_train_environment_strs": [
+                "RTX2080Ti_CPUALL"
+            ],
+            "meta_dataset_eval_environment_strs": [
+                "RTX2080Ti_CPUALL"
+            ]
+        }
+    },
+    "train_records": {
+        "loss": [],
+        "eval_metrics": [
+            {
+                "metrics": {
+                    "eval_loss": 0.0889714126766638,
+                    "MRE": 0.8856604730640036,
+                    "MAE": 0.46609790879880986,
+                    "RMSE": 482.99619099887235,
+                    "train_loss": 0.11239545047283173
+                },
+                "step": 0,
+                "duration": 0.008212451
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.013061187821902505,
+                    "MRE": 0.0694304056674345,
+                    "MAE": 0.08421595566918805,
+                    "RMSE": 175.8525976894264,
+                    "train_loss": 0.007636162452399731
+                },
+                "step": 5000,
+                "duration": 17.47905863
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.010603276751437829,
+                    "MRE": 0.07705321790169993,
+                    "MAE": 0.07699002290189619,
+                    "RMSE": 122.8170408220425,
+                    "train_loss": 0.011847645044326782
+                },
+                "step": 10000,
+                "duration": 34.981832093
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.009533071668306721,
+                    "MRE": 0.06528658710939533,
+                    "MAE": 0.06342514313558878,
+                    "RMSE": 104.94487387488874,
+                    "train_loss": 0.008290937170386314
+                },
+                "step": 15000,
+                "duration": 52.394842753
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.008448937081355062,
+                    "MRE": 0.06373069370499497,
+                    "MAE": 0.05643274232407298,
+                    "RMSE": 87.66067648503508,
+                    "train_loss": 0.007301250007003546
+                },
+                "step": 20000,
+                "duration": 69.716775775
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.00799062340662509,
+                    "MRE": 0.05499095883009984,
+                    "MAE": 0.0461008569775016,
+                    "RMSE": 70.44262614140696,
+                    "train_loss": 0.007081467658281326
+                },
+                "step": 25000,
+                "duration": 86.959161548
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.007087214508641312,
+                    "MRE": 0.060392323288986534,
+                    "MAE": 0.04512008429001063,
+                    "RMSE": 58.825864947489414,
+                    "train_loss": 0.0060980296693742275
+                },
+                "step": 30000,
+                "duration": 104.263052747
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.007039333592375158,
+                    "MRE": 0.05198624349831401,
+                    "MAE": 0.04018393773850066,
+                    "RMSE": 53.77505573174172,
+                    "train_loss": 0.007779767271131277
+                },
+                "step": 35000,
+                "duration": 121.573796217
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006441317685303911,
+                    "MRE": 0.053519348672347894,
+                    "MAE": 0.04344419868084288,
+                    "RMSE": 59.44967804122082,
+                    "train_loss": 0.005888797342777252
+                },
+                "step": 40000,
+                "duration": 138.945622717
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006121388782270765,
+                    "MRE": 0.05252956756681005,
+                    "MAE": 0.042734450847146215,
+                    "RMSE": 57.56267106742437,
+                    "train_loss": 0.004635987803339958
+                },
+                "step": 45000,
+                "duration": 156.281474611
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.006290631426519622,
+                    "MRE": 0.05036196857529384,
+                    "MAE": 0.041204585425474984,
+                    "RMSE": 58.42867577879981,
+                    "train_loss": 0.004381890874356031
+                },
+                "step": 50000,
+                "duration": 173.722194705
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.005950500635885214,
+                    "MRE": 0.052368982564720466,
+                    "MAE": 0.042195390091750794,
+                    "RMSE": 49.85676809058868,
+                    "train_loss": 0.0052275341004133224
+                },
+                "step": 55000,
+                "duration": 193.277501164
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.005642314945376045,
+                    "MRE": 0.048181784908048884,
+                    "MAE": 0.03905750649673008,
+                    "RMSE": 51.90055298719594,
+                    "train_loss": 0.0036227256059646606
+                },
+                "step": 60000,
+                "duration": 210.550386244
+            },
+            {
+                "metrics": {
+                    "eval_loss": 0.00553707534781451,
+                    "MRE": 0.04877217505841558,
+                    "MAE": 0.035921785706679,
+                    "RMSE": 44.4255384221851,
+                    "train_loss": 0.0038040648214519024
+                },
+                "step": 65000,
+                "duration": 227.950278614
+            }
+        ]
+    }
+}

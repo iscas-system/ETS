@@ -1,0 +1,16 @@
+__pycache__
+*.sql
+*.vscode
+*.qdrep
+*.log
+*.pyc
+
+build/
+dist/
+nvidia_pyprof.egg-info/
+tmp/
+data/
+plot/
+.idea/
+.vscode/
+.ipynb_checkpoints/
